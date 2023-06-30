@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="javax.security.auth.spi.LoginModule"/>
+    <fullyQualifiedTypeName name="edu.kh.basic.model.service.InheritanceService"/>
+    <fullyQualifiedTypeName name="edu.kh.basic.model.vo.InheritancePerson"/>
+    <fullyQualifiedTypeName name="edu.kh.basic.model.vo.InheritanceStudent"/>
+    <fullyQualifiedTypeName name="edu.kh.basic.model.vo.PolySpark"/>
+    <fullyQualifiedTypeName name="edu.kh.basic.model.vo.PolyTesla"/>
+    <fullyQualifiedTypeName name="edu.kh.basic.model.service.PolyService"/>
+    <fullyQualifiedTypeName name="edu.kh.basic.model.vo.PolyCar"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="edu.kh.jdbc.model.service.EmployeeService"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="edu.kh.jdbc.model.vo.Employee"/>
+    <fullyQualifiedTypeName name="edu.kh.jdbc.model.dao.EmployeeDAO"/>
+</qualifiedTypeNameHistroy>

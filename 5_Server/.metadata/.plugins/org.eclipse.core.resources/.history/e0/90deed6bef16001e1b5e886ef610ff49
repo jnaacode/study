@@ -1,0 +1,9 @@
+package edu.kh.jsp.model.vo;
+
+public class Person {
+
+	public Person() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

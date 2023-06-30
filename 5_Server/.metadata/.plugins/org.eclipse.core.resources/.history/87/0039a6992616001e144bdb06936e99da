@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSP 프로젝트</title>
+</head>
+<body>
+
+    <h3>GET 방식 요청</h3>
+
+    <form action="/JSPProject01/login" method="get">
+
+        <!-- 
+            요청 주소 : /JSPProject01/login
+            데이터 전달 방식 : get (주소뒤에 데이터가 붙어서 전달됨)
+
+         -->
+
+
+
+        
+    </form>
+
+
+
+</body>
+
+</html>

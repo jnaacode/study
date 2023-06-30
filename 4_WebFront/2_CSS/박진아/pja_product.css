@@ -1,0 +1,158 @@
+
+
+.product-top2{
+    padding-bottom: 0;
+    padding: 2em 0 2em;
+}
+
+.product-middle2{
+    padding-bottom: 0;
+    padding: 2em 0 2em;
+}
+
+.produt2{
+    width: 95%;
+    max-width: 1150px;
+    height: 100%;
+    margin: auto;
+}
+
+.prd-brand2{
+    font-size:15px;
+    font-weight: bold;
+}
+.prd-name2{
+    font-size:20px;
+    font-weight: bold;
+
+}
+
+.blank{
+    width: 80%;  
+    
+
+}
+
+
+
+.product-img2{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    margin: 15px;
+     
+}
+
+
+#prd{
+    width: 100%;
+}
+
+/* 판매가 */
+.prd-price2{
+    display: flex;
+    padding: 12px 18px;
+
+}
+
+.prd-price2>div:nth-child(1){
+    width: 15%;
+    padding-left: 15px;
+    
+}
+
+.prd-price2>div:nth-child(2){
+    width: 100%;
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+/* 주의사항 */
+.prd-ex2{
+    display: flex;
+    padding: 12px 18px;
+   
+}
+
+
+.prd-ex2>div:nth-child(1){
+    width: 15%;
+    padding-left: 15px;
+}
+
+.prd-ex2>div:nth-child(2){
+    width: 100%;
+    padding-left: 3px;
+}
+
+.prd-ex2>div p{
+    width: 100%;
+    padding-left: 15px;
+    margin-top: 0px;
+}
+
+
+
+/* 버튼 */
+.prd-button{
+    display: flex;
+    padding: 12px 18px;
+}
+
+.prd-button>div:nth-child(1){
+    width: 50%;
+    padding: 10px;
+    
+}
+
+.prd-button>div:nth-child(2){
+    width: 50%;
+    padding: 10px;
+    
+}
+
+.bu1{
+    width: 100%;
+    height: 45px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.bu2:hover{
+    background-color : #FFC847;
+    color: black;
+    border: 0;
+}
+.bu2{
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.bu1:hover:hover{
+    background-color : #DAEFC6;
+    color: black;
+    border: 0;
+}
+
+.produt3{
+    width: 95%;
+    max-width: 1150px;
+    height: 100%;
+    margin: auto;
+}
+
+.product-title2{
+    padding: 0 50px
+    ;
+
+}
+
+
+
+

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>pja_login</title>
+
+
+    <link rel="stylesheet" href="pja_product.css">
+    <link rel="stylesheet" href="pja.css">
+    <link rel="stylesheet" href="pja_login.css">
+    <script src="https://kit.fontawesome.com/7bc7245179.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <!-- 로그인창 -->
+            <div class="head1">
+                <ul>
+                    <li><a href="">LOGIN</a></li>
+                    <li><a href="">JOIN</a></li>
+                    <li><a href="">CART</a></li>
+                </ul>
+            </div>
+
+            <!-- 로고 -->
+            <div class="head2">
+                <div>
+                    <a href="pja.html">
+                        <img src="logo-removebg-preview.png" id="home-logo">
+                    </a>
+                </div>
+
+                <!-- 카테고리 -->
+                <div>
+                    <ul>
+                        <li><a href="">전체상품</a></li>
+                        <li><a href="">프로모션</a></li>
+                        <li><a href="">상품추천</a></li>
+                        <li><a href="">고객센터</a></li>
+                    </ul>
+                </div>
+
+                <!-- 검색어 -->
+                <div>
+                    <div class="search-area">
+
+                        <!-- form내부 input 태그 값을 서버 또는 페이지로 전달 -->
+                        <form action="#" name="search-form">
+
+                            <!-- fielset : form 내부에서 input을 종료별로 묶는 용도로 많이 사용 -->
+                            <fieldset>
+                                <!-- query : 검색한값 -->
+                               <input type="search" id="query" name="query" placeholder="검색어를 입력 해주세요."
+                                    autocapitalize="off">
+                                <!-- 검색버튼 -->
+                                <button type="submit" id="serach-btn" i class="fa-solid fa-magnifying-glass"></button>
+
+                            </fieldset>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <form action="main.html" method="get" onsubmit="return validate()">
+        <div class="join">
+            <h1 style="margin-top: 50px;">회원 가입</h1>
+
+
+            <div class="join-member"> 
+
+                <div class="join-entire">
+                <div class="join-mem">회원유형
+                    <div><label for="a-team"><input type="radio" name="team" id="inputmem" value="A">일반회원 &nbsp;
+                            <span class="desc">B2B 프로모션용 대량 발송이 필요한 일반 고객</span></label></div>
+
+
+                    <div><label for="a-team"><input type="radio" name="team" id="inputmem" value="A">기업회원 &nbsp;
+                            <span class="desc">법인 또는 개인 사업자, 협회, 재단 등 사업자번호를 보유한 고객</span></label></div>
+
+                    <div><label for="a-team"><input type="radio" name="team" id="inputmem" value="A">대학회원 &nbsp;
+                            <span class="desc">학생회, 연구원, 교무처 등 대학에 속해 있는 고객</span></label></div>
+                </div>
+
+                <div>
+                    <div class="join-ex">상호명*</div>
+                    <input type="text" placeholder="상호(법인)명 또는 개인" class="join-text" >
+                </div>
+
+                <div>
+                    <div class="join-ex">사업자등록번호</div>
+                    <div><input type="text" placeholder="'-' 없이 입력" class="join-text1">
+                        <button class="join-button">인증하기</button></div>
+                </div>
+
+                <div>
+                    <div class="join-ex">이메일</div>
+                    <div><input type="emil" placeholder="이메일 주소를 입력해주세요." class="join-text1">
+                    <button class="join-button">인증하기</button></div>
+                </div>
+
+                <div>
+                    <div class="join-ex">핸드폰번호</div>
+                    <div><input type="tel" placeholder="'-' 없이 입력" class="join-text1">
+                        <button class="join-button">인증하기</button></div>
+
+                
+                <div>
+                    <div class="join-ex">비밀번호</div>
+                    <div><input type="password" placeholder="영문,숫자,특수문자 포함 8자 이상"class="join-text" ></div>
+                    <div class="join_blank"></div>
+                    <div><input type="password" placeholder="비밀번호 재 입력" class="join-text"></div>
+                </div>
+
+                <div>
+                    <div class="join-ex" >발송목적</div>
+                    <div><select name="" id="join-purpose">
+                        <option value="">선택해주세요</option>
+                        <option value="">직원복지</option>
+                        <option value="">학교행사</option>
+                        <option value="">공공기관</option>
+                        <option value="">설문조사</option>
+                        <option value="">이벤트</option>
+                    </select></div>
+                </div>
+
+                <div class="join-ex">방문경로</div>
+                <div><select name="" id="join-purpose">
+                    <option value="">선택해주세요</option>
+                    <option value="">검색엔진(구글,네이버,카카오)</option>
+                    <option value="">블로그,카페,커뮤니티</option>
+                    <option value="">미디어매체(유튜브)</option>
+                    <option value="">지인추천,소개</option>
+                    <option value="">광고문자,전화,이메일</option>
+                </select></div>
+          
+                <div class="argree"><input type="radio" > SENDp 모바일쿠폰 사용약관에 동의합니다.</div>
+
+                <a href="pja.html"><button class="button-join">가입하기</button></div></a>
+
+                
+
+       
+    
+            </div>
+
+
+        </div>
+
+        <div class="footer" style="text-align: left;">
+
+            <div>
+                <a href="">공지사항</a>
+                <span> | </span>
+
+                <a href="">개인정보취급방침</a>
+                <span> | </span>
+
+                <a href="">이용약관</a>
+                <span> | </span>
+
+                <a href="">마케팅정보 수신동의</a>
+                <span> | </span>
+
+                <a href="">자주하는질문</a>
+                <span> | </span>
+
+                <a href="">제휴문의</a>
+            </div>
+
+
+            <p><strong> &nbsp; sendp는 박진아가 만든 사이트입니다. <br></strong>
+                &nbsp; 대표 : 박진아 | 사업자등록번호 : 1234-1234-1234 | 서울특별시 강남구 강남구 테헤란로14길 6
+                &nbsp; 운영시간 | 9:00 ~ 18:00(토,일 공휴일 제회) <br>
+                &nbsp; Copyright ⓒ pja Rights Reserved.
+
+            </p>
+
+
+        </div>
+    </form>
+
+    <script src="../../../4_WebFront/2_CSS/박진아/pja_login.js"></script>      
+
+</body>
+
+</html>

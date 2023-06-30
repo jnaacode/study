@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            padding: 15px;
+        }
+
+        .btn{
+            text-align: center;
+        }
+        fieldset{
+            width: auto;
+            height: auto;
+        }
+        input{
+            margin: 4px;
+        }
+        .red{background-color: red;}
+        .white{color: white;}
+        .green{background-color:green;}
+
+    </style>
+
+</head>
+
+<body>
+    <form onsubmit="return validate()">
+        <fieldset>
+            <legend>회원 가입 양식</legend>
+            <table>
+                <tr>
+                    <td>아이디</td>
+                    <td><input type="text" id="id-btn"></td>
+                    <td><button >중복확인</button></td>
+                </tr>
+
+                <tr>
+                    <td>비밀번호</td>
+                    <td><input type="password" id="pw-1"><span id="pw-text"></span></td>
+                </tr>
+
+                <tr>
+                    <td>비밀번호확인</td>
+                    <td><input type="password" id="pw-2"></td>
+                </tr>
+
+                <tr>
+                    <td>이름</td>
+                    <td><input type="text" id="name"><span id="name-text"></span></td>
+                </tr>
+
+                <tr>
+                    <td>성별</td>
+                    <td><label for="f">남<input type="radio" name="f">
+                    </label><label for="m">여<input type="radio" name="m"></label></td>
+                </tr>
+
+                <tr>
+                    <td>전화번호</td>
+                    <td><input type="text" id="tel"></td>
+                </tr>
+
+                <tr>
+                    <td>이메일</td>
+                    <td><input type="text" id="email"></td>
+                </tr>
+            </table>
+
+            <div class="btn">
+                <button class="btn1">초기화</button>
+                <button class="btn2">회원가입</button>
+            </div>
+     
+        </fieldset>
+
+    </form>
+
+
+    <script src="js/실습문제2(회원가입,양식문제).js"></script>
+</body>
+
+</html>

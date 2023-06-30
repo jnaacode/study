@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습문제1</title>
+</head>
+
+<body>
+
+    <h1>간이 계산기 만들기</h1>
+
+    첫번째 값 : <input type="text" id="num1"> <br>
+    두번째 값 : <input type="text" id="num2"> <br>
+
+    <br>
+
+    <button onclick="calculate('+')">+</button>
+    <button onclick="calculate('-')">-</button>
+    <button onclick="calculate('*')">*</button>
+    <button onclick="calculate('/')">/</button>
+    <button onclick="calculate('%')">%</button>
+
+    <br><br>
+
+    계산 결과 : <span id="result"></span>
+
+    <script>
+
+        function calculate(op){
+            //op에는 +, -, *, /, % 중 하나가 전달되어짐
+            //input에 입력된 값을 얻어와 바로 number 타입으로 변환 
+            const num1 = Number(document.getElementById("num1").value);
+            const num2 = Number(document.getElementById("num2").value);
+
+            //결과 저장용 변수 
+            let res = 0;
+            switch(op){
+                case '+' : res =num1+num2; break;
+                case '-' : res =num1-num2; break;
+                case '*' : res =num1*num2; break;
+                case '/' : res =num1/num2; break;
+                case '%' : res =num1%num2; break;
+            }
+
+            //span 태그에 결과 출력
+            //1.요소 먼저 가져와! document.getElementById("result")
+            //2.안에 내용에 넣고 싶어! .innerText /innerHTML 
+            //3. = 넣는 값! 넣어줘!
+            document.getElementById("result").innerText=res;
+
+        }
+
+    </script>
+
+</body>
+
+</html>

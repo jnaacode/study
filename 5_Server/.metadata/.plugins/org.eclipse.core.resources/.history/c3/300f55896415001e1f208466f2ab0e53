@@ -1,0 +1,26 @@
+package edu.kh.servlet;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+// Servlet 클래스를 만들기 위해서는 
+// javax.servlet.http.HttpServlet 추상 클래스를 
+// 반드시 상속 받아야 한다 (국룰)
+
+// -> doGet() doPost()를 필요한 형태로 오버라이딩 진행 
+
+public class ServletEx1 extends HttpServlet{
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	
+		//HttpServletRequest : 클라이언트 + 요청 정보가 담긴 객체 
+		//HttpServletResponse : 서버가 클라이언트한테 응답하는 방법을 제공하는 객체
+	
+	}
+
+}

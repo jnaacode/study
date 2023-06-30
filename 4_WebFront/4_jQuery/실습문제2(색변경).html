@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습문제2(색변경)</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <style>
+        .area {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        .inputColor {
+            box-sizing: border-box;
+            width: 100px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .div2 {
+            display: inline-block;
+        }
+
+        .box {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="area" id="box1"></div>
+    <input type="text" class="inputColor" id="input1"><br>
+    <button type="button" id="btn1">색 변경</button>
+    <hr>
+
+    <div class="area div2"></div>
+    <div class="area div2"></div>
+    <div class="area div2"></div>
+    <div class="area div2"></div>
+    <div class="area div2"></div>
+    <div class="area div2"></div>
+    <div>
+        <input type="text" class="inputColor input2">
+        <input type="text" class="inputColor input2">
+        <input type="text" class="inputColor input2">
+        <input type="text" class="inputColor input2">
+        <input type="text" class="inputColor input2">
+        <input type="text" class="inputColor input2">
+    </div>
+    <button type="button" id="btn2">색변경</button>
+
+    <script>
+        $("#btn1").on("click", function () {
+            $("#box1").css("backgroundColor", $("#input1").val())
+        });
+
+        $("#btn2").on("click", function () {
+            const divArr = $(".div2");
+            const inputArr = $(".input2");
+
+            //$(divArr).css("backgroundColor",$(inputArr).val());
+
+            for (let i = 0; i < divArr.length; i++) {
+                $(divArr[i]).css("backgroundColor", $(inputArr[i]).val());
+
+            }
+
+        })
+    </script>
+
+    <hr>
+
+    <div class="box">
+        <div class="area div3"></div>
+        <input type="text" class="inputColor input3">
+    </div>
+    <div class="box">
+        <div class="area div3"></div>
+        <input type="text" class="inputColor input3">
+    </div>
+    <div class="box">
+        <div class="area div3"></div>
+        <input type="text" class="inputColor input3">
+    </div>
+    <div class="box">
+        <div class="area div3"></div>
+        <input type="text" class="inputColor input3">
+    </div>
+    <div class="box">
+        <div class="area div3"></div>
+        <input type="text" class="inputColor input3">
+    </div>
+    <div class="box">
+        <div class="area div3"></div>
+        <input type="text" class="inputColor input3">
+    </div>
+
+    <script>
+
+        $(".input3").on("input",function(){
+            $(this).css("borderColor",$(this).val());
+            $(this).prev().css("backgroundColor",$(this).val());
+        })
+
+            // const div3 = $(".div3");
+            // const input3 = $(".input3");
+            
+            // for(let i =0;i<div3.length;i++){
+            //     $(div3[i]).css("backgroundColor",$(input3[i]).val());
+            //     $(input3[i]).css("border","1px solid "+$(input3[i]).val());
+            // }
+
+    </script>
+
+
+
+</body>
+
+</html>

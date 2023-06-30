@@ -1,0 +1,9 @@
+package edu.kh.jsp.controller;
+
+public class DinnerOrderServlet {
+
+	public DinnerOrderServlet() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

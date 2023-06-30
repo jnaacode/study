@@ -1,0 +1,236 @@
+*{box-sizing: border-box;}
+div{border: 1px solid black;}
+
+.container{
+    width: 1140px;
+    margin: auto;
+}
+
+.header{
+    height:140px ;
+    display: flex;
+    background-color: #f6f5ef;
+    
+}
+
+.logo{
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.head1{
+    flex-basis: 80%;
+    
+}
+
+.head2{
+    display: flex;
+    justify-content :flex-end;
+    height: 50%;
+
+}
+
+.text1{
+    margin: 15px;
+
+}
+
+.text2{
+    margin: 15px;
+    font-weight: 10;
+}
+
+#serach-btn{
+    width: 5%;
+    cursor: pointer;
+    font-size: 1.2em;
+    color:black;
+    background-color: #f6f5ef;
+    border: 0;
+
+   
+}
+
+.head3{
+    display:flex;
+    justify-content: flex-end;
+    height: 50%;
+
+}
+
+.starlogo{
+    width: 10px;
+    height: auto;
+
+}
+
+.big-ban{
+    height:600px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#bigbanner{
+    width: 100%;
+    height: 100%;
+}
+
+.ban{
+    height:100px;
+    display: flex;
+}
+
+.gong{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+.promotion{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.footer{
+    height: 300px;
+    display: flex;
+}
+
+.big-logo{
+    background-color: #1e3932;
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+}
+
+.in{
+    background-color: #1e3932;
+    display: flex;
+    flex-basis: 75%;
+}
+
+
+
+.top{
+    flex-basis:100%;
+    width: 100%;
+    
+}
+
+.in1{
+    display: flex;
+    flex-basis: 40%;
+    height: 25%;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+
+.in2{
+    display: flex;
+    flex-basis: 40%;
+    height: 25%;
+    width: 100%;
+    color: white;
+}
+
+.pen{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.but{
+    width: 45%;
+
+    padding-left: 16%;
+    padding-top: 4%;
+    
+}
+
+.bu1{
+    background-color: green;
+    color: white;
+    border-color: green;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.bu2{
+    background-color: #1e3932;
+    color: white;
+    border-color:white;
+    border-radius: 5px;
+}
+.bu3{
+    background-color: #1e3932;
+    color: white;
+    border-color:white;
+    border-radius: 5px;
+}
+
+
+
+.but1{
+
+
+    padding-left: 16%;
+    padding-top: 4%;
+}
+
+.fix{
+    position: fixed;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    right: 20%;
+    top:27%;
+
+}
+
+.fixed{
+    position: absolute;
+    display: flex;
+    left: 31.8%;
+    top: 55%;
+    
+}
+
+#bubu{
+    background-color: pink;
+    border: white;
+    height: 25px;
+    width: 95px;
+}
+
+#bubu:hover{
+    background-color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}

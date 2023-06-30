@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>EL 확인하기</title>
+</head>
+<body>
+
+	<h3>request에서 Parameter 얻어오기</h3>
+	
+	1) JSP 표현식 : 
+	<%= request.getParameter("inputName") %> / 
+	<%= request.getParameter("inputAge") %> /
+	<%= request.getParameter("inputAddress") %>
+	
+	<br><br>
+	2) EL(표현언어)
+</body>
+</html>

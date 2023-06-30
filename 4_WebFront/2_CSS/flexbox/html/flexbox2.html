@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flextbox2</title>
+
+    <link rel="stylesheet" href="../css/flex-stye2.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <h1>flex-warp:wrap | wrap-reverse; 배치방법</h1>
+    <div class="flex-container">
+        <div class="item item1">items1</div>
+        <div class="item item2">items2</div>
+        <div class="item item3">items3</div>
+        <div class="item item4">items4</div>
+        <div class="item item5">items5</div>
+        <div class="item item6">items6</div>
+        <div class="item item7">items7</div>
+        <div class="item item8">items8</div>
+        <div class="item item9">items9</div>
+
+        <div class="item item1">items1</div>
+        <div class="item item2">items2</div>
+        <div class="item item3">items3</div>
+        <div class="item item4">items4</div>
+        <div class="item item5">items5</div>
+        <div class="item item6">items6</div>
+        <div class="item item7">items7</div>
+        <div class="item item8">items8</div>
+        <div class="item item9">items9</div>
+    </div>
+
+    <!-- 
+        flex-container 전용 속성 
+
+        1) flex-direcion : main axis(중심축)방향, 시작/ 끝 지정 
+        - row(기본값)
+        - row-reverse
+        - colum
+        - colum-reverse
+
+        2) flex-wrap : item이 한줄/ 여러 줄로 배치 되게 지정 
+        - nowrap (기본값) : 한 줄로 배치 item의 크기가 변경(훼손)될 수 있음
+        - wrap : 여러 줄로 배치 (모양 그대로 유지)
+        - wrap-reverse : 여러 줄로 배치 (cross axis 방향이 반대)
+
+        3) flex-flow : flex-direction + flew-wrap;
+
+        4) justify-content : main axis(중심축)을 기준으로 item 정렬
+        5) aline-conten : cross axis(교차축)을 기준으로 포장된(wrap) item들을 정렬
+                        -> 조건 : flex-wrap이 wrap또는 wrap-reverse 이여야함
+        
+        - flex-start    : 축 시작 지점 기준으로 정렬 
+        - flex-end      : 축 끝 지점 기준으로 정렬 
+        - center        : 축 가운데 정렬 
+        - space-around  : item에 축 방향 양쪽으로 일정한 크기의 공간을 배치
+        - space-evenly  : item에 축 방향 양쪽으로 모두 동일한 크기의 공간을 배치 
+        - space-between : space-evenly에서 시작, 끝 item에 flex-container 붙게 배치 
+    
+        6) aline-items : cross axis(교차축)을 기준으로 item을 배치 
+        - stretch(기본값) : item을 cross axis 방향으로 flex-container 만큼 늘림 
+                        단, cross axis 방향으로 지정된 크기 속성 (width/height)이 없어야함.
+        
+        - flex-start     : 교차축 시작 지점에 배치 
+        - flex-end       : 교차축 끝 지점에 배치 
+        - center         : 교차축 가운데 지점에 배치 
+
+        - baseline       : item에 작성된 내용이 같은 라인에 배치 될 수 있도록 
+                           item을 교차축 방향으로 알맞게 배치 
+
+     -->
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+package edu.kh.jsp.controller;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+// @WebServlet("요청주소") 어노테이션
+// 해당 클래스를 Servlet 클래스로 등록(<servlet>태그)하고 
+// 어떤 요청 주소를 처리 할지 지정(<servlet-mapping>태그)해주는 것이다. 
+
+@WebServlet("/login")
+public class LoginServlet extends HttpServlet {
+       
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
+		//요청 시 전달 된 input 태그의 값(==Parameter)얻어오기
+		//파라미터는 모두! String 타입이다! 
+		String inputId = req.getParameter("inputId");
+		String inputPw = req.getParameter("inputPw");
+		
+		//파라미터 잘 얻어 왔는지 확인 
+		System.out.println("ID :"+inputId);
+		System.out.println("PW :"+inputPw);
+		
+		//간이 로그인 확인 코드
+		String result = null; 
+		
+		if(inputId.equals("user01")&&inputPw.equals("pass01!")) {
+			result = inputId+"님이 로그인 하셨습니다.";
+		}else {
+			result ="아이디 또는 비밀번호가 일치하지 않습니다.";
+		}
+		
+		//out.print("<html>");->JSP 교체
+		
+		//JSP란 ? 
+		// - Servlet에 HTML코드를 쓰는게 불편하기 때문에
+		//   반대로 HTML 코드에 Java코드를 쓸 수 있게 하는 문서
+		
+		
+	}
+
+
+}

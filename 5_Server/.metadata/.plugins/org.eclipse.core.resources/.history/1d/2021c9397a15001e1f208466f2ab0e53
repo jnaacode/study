@@ -1,0 +1,46 @@
+package edu.kh.servlet;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+//Servlet클래스를 만들 때는 
+//반드시 HttpServlet상속 받아야한다.
+public class ServletEx2 extends HttpServlet {
+
+	// 상속이니 오버라이드를 해야한다.
+	// Get방식 요청을 처리하는(do)메소드
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+		// 파라미터(Parameter) ==요청 시 전달된 input태그값
+		String orderer = req.getParameter("orderer");
+
+		// -> getParameter()는 전달된 input태그의 name이 하나일 때 만 가능하다.
+
+		// 같은 name이 여러 개면 String[]로 반환 하는
+		// getParameterValues()를 사용
+
+		String[] coffee = req.getParameterValues("coffee");
+		// 체크박스에 체크된 메뉴들이 모두 배열에 담김
+		// --> 체크가 안되면 배열에 하나도 담기지 않음
+
+		if (coffee != null) { // 체크된 메뉴가 있는지 검사
+			// 향상된 for문
+			for (String c : coffee) {
+				System.out.println(c);
+			}
+		}
+		System.out.println("주문자 : "+orderer);
+		//HttpServletRequest : 클라이언트 정보 + 전달 된 값
+		//HttpServletResponse : 서버가 클라이언트에게 응답할 방법을 제공
+		
+		//Write : 서버가 클라이언트에게 쓰다 == 출력 
+		//resp.getWriter() : 서버가 클라이언트에게 응답할 수 있는 
+		//					  출력 전용 스트림을 얻어옴
+	}
+
+}

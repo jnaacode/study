@@ -1,0 +1,159 @@
+img {
+    width: 250px;
+    height: auto;
+    /* 이미지는 원래 자신만의 너비/높이를 가지고 있어 
+       한 방향의 크기만 지정해도 
+       남은 방향은 자동적으로 비율에 맞춰서 지정된다.*/
+
+}
+
+/* transform : 변형과 관련된 속성 */
+
+/* css 속성 작성 시 크로스 브라우저(브라우저가 달라지는 경우) 처리 방법 
+   - ms : 마이크로 소프트(익스플로우,엣지)
+   - webkit : 크롬, 사파리
+   - o- : 오페라
+   - moz- : 파이어스폭스 
+*/
+
+/* 좌우이동 */
+.trans-x-2d:hover {
+    -ms-transform: translateX(100px);
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+    /* 바꾸다 */
+}
+
+/* 상하이동 */
+.trans-y-2d:hover {
+    -ms-transform: translateY(100px);
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+    /* 바꾸다 */
+}
+
+/* 대각선이동 */
+.trans-d-2d:hover {
+    -ms-transform: translate(100px, -100px);
+    -webkit-transform: translate(100px, -100px);
+    transform: translate(100px, -100px);
+    /* x       y */
+    /* 바꾸다 */
+}
+
+/* scale(배율) */
+
+/* 가로 방향 확대/축소 */
+.trans-x-scale-2d:hover {
+    transform: scaleX(2);
+    margin-left: 200px;
+}
+
+/* 세로 방향 확대/축소 */
+.trans-y-scale-2d:hover {
+    transform: scaleY(2);
+    margin: 100px 15px;
+    /* 세로 가로 */
+}
+
+/* 요소 확대/축소(대각선) */
+.trans-scale-2d:hover {
+    transform: scale(2, 2);
+    margin: 150px 150px;
+    /* 세로 가로 */
+}
+
+/* 요소 회전 */
+/* rotate(각도 deg) */
+.trans-rotate:hover {
+    transform: rotate(180deg);
+
+}
+
+/* x , y ,z축 이동 */
+.trans-3d:hover {
+
+    /* perspective (z축의 길이) : 원근법 적용 */
+    transform: perspective(400px) translateZ(300px);
+    transform: perspective(300px) translate3d(50px, 50px, 100px);
+    /*  x    y    z  */
+}
+
+
+/* x축 회전 */
+.trans-rotate-x-3d {
+    transform: perspective(300px) rotateX(45deg);
+}
+
+/* y 축 회전 */
+.trans-rotate-y-3d {
+    transform: perspective(300px) rotateY(45deg);
+}
+
+/* z 축 회전 */
+.trans-rotate-z-3d {
+    transform: perspective(300px) rotateZ(45deg);
+}
+
+/* z 축 회전 */
+.trans-rotate-3d:hover {
+    transform: perspective(300px) rotate3d(0.5, 0.5, 0.5, 45deg);
+    /* rotated3d(x,y,z 회전 각도)
+       x / y / z는 0~1 사이 숫자
+    */
+}
+
+/* transition */
+.box {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    background-color: red;
+
+    /* 스타일이 변경되는 시간 지정 */
+    transition-duration: 1s;
+
+}
+
+.test1:hover {
+    background-color: yellowgreen;
+}
+
+.test2 {
+    transition-duration: 3s;
+}
+
+
+.test2:hover {
+    transform: rotate(360deg);
+    background-color: plum;
+
+    /* 테두리 모서리 곡률 속성 */
+    border-radius: 50%;
+
+}
+
+.test3 {
+    transition-duration: 3s;
+    /*  linear | ease(기본값) | ease-in | ease-out | ease-in-out | cublic-bezier(n,n,n,n) */
+    transition-timing-function: cubic-bezier(0.3,0.3,1,0.9);
+    transition-timing-function: linear; 
+    transition-timing-function: ease;
+    transition-timing-function: ease-out;
+    transition-timing-function: ease-in-out;
+
+}
+
+.test3:hover{
+    background-color: indianred;
+    transform:rotate(720deg)
+}
+
+.test4{
+
+    transition-delay: 2s;
+}
+
+.test4:hover{
+    transform: translateX(100px);
+}

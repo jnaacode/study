@@ -1,0 +1,36 @@
+/* : only-child */
+#test1 > p:only-child{
+    background-color: pink;
+}
+/* :only-of-type */
+#test2 > p:only-of-type{
+    background-color: chartreuse;
+}
+
+/* empty */
+#test3>p:empty{
+    height: 50px;
+    background-color: cadetblue;
+}
+
+/* 특정 요소 내부에 있는 특정 클래스만 선택 */
+/* #test4-1의 후손 중 클래스가 c4인 요소 선택 */
+#test4-1 .c4{
+    background-color: darkmagenta;
+}
+
+/* #test4-2의 자식 클래스가 c4인 li요소만 선택 */
+#test4-2 > li.c4{
+    background-color: darkturquoise;
+}
+
+/* 여러 선택자 동시 선택 */
+#test5-1,#test5-2,#test5-3{
+    border: 1px solid black;
+    background-color: rebeccapurple;
+}
+
+/* 클래스가 여러개 인 요소만 선택 */
+.test6.c6{
+    background-color: chartreuse;
+}

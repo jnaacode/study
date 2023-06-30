@@ -1,0 +1,137 @@
+.flex-container1 {
+    height: 10vh
+}
+
+.header{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: auto; 
+
+
+}
+.g1{
+    padding: 15px;
+    text-align:center;
+    
+}
+
+#search1{
+    border-radius: 24px;
+    width: 500px;
+    height: 30px;
+    position: relative;
+    
+
+}
+
+.flex-container2 {
+    height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+.logo1{
+    text-align: center;
+
+}
+
+.item1{
+    padding-top: 15px;
+    justify-content: space-between;
+    justify-content: center;
+    display: flex;
+    box-sizing: border-box;
+}
+.imim{
+    padding-left: 25px;
+}
+
+
+
+.item2{
+    justify-content: space-between;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: c;
+
+    
+}
+
+.item3{
+    padding-top: 15px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.item4{
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link{
+    flex-basis: 50%;
+    padding: 10px;
+
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.link1{
+    text-align: center;
+}
+
+.flex-basis1{
+    margin-left:15px;
+
+}
+
+.flex-container3 {
+    height: 10vh;
+    position: absolute
+}
+
+#jina{
+    height: auto;
+}
+
+.please{
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    position:fixed;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 24px;
+    border: 1px solid black;
+    
+
+}
+.text{
+    position: relative;
+}
+
+#eheqhrl{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 15px;
+
+    width: 15px;
+    height: 15px;
+    
+
+}
+
+.container{
+    display: flex;
+
+}

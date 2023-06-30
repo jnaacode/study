@@ -1,0 +1,124 @@
+*{
+
+    box-sizing: border-box;
+}
+
+.goole{
+    width: 100%;
+    height: 950px;
+}
+/* 
+div{
+    border: 1px solid black;
+}
+ */
+.header{
+    height: 10%;
+
+}
+.g1{
+    float: right;
+    padding: 15px;
+}
+
+.midder{
+    height: 80%;
+
+    
+}
+
+div{
+    border: 1px solid black;
+}
+
+.logo1{
+    height: 15%;
+    position: relative;
+}
+.logo2{
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    right: 60px;
+    left: 0;
+    margin: auto;
+
+    width: 200px;
+    height: 100px;
+}
+
+.text{
+    text-align: center;
+    size: 50;
+    height: 10%;
+    position: relative;
+
+}
+
+#search1{
+
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+
+    border-radius: 24px;
+    width: 400px;
+    height: 30px;
+}
+.button{
+    height: 15%;
+    padding: 15px;
+    padding-top: 25px;
+    text-align: center;
+
+}
+.button1:{
+    padding: 10%;
+}
+
+.goi{
+    padding: 10px;
+    padding-top: 15px
+
+}
+.bottom{
+    height: 10%;
+
+    
+}
+
+#footer1{
+    height: 50%;
+    background-color: gainsboro;
+    border: 1px solid white;
+
+}
+
+#footer2{
+    height: 50%;
+    background-color: gainsboro;
+}
+
+.fr{
+    float: left;
+    padding-left: 10px;
+}
+.fl{
+    float: right;
+    padding-right: 30px;
+}
+
+h1{
+    text-align: center;
+    margin: 100px;
+    margin-bottom: 50px;
+    font-size: 50px;
+
+
+}
+
+

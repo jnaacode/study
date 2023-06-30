@@ -1,0 +1,103 @@
+.join{
+    width: 95%;
+    max-width: 1150px;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.join-member{
+
+    max-width: 1150px;
+    height: 100%;
+    margin: auto;
+    margin: 0 100px; 
+    cursor: pointer;
+
+}
+
+.join-entire{
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+
+.desc{
+    font-size: 12px;
+    color: gray;
+}
+
+.join-ex{
+    display: flex;
+    height: 50px;
+    padding-top: 25px;
+    padding-right: 5px;
+}
+
+.join-text{
+    padding-top: 5px;
+    height: 40px;
+    width: 500px;
+    background-color: white;
+    border: 1px solid #D9D9D9;
+    cursor: pointer;
+    
+}
+
+.join-button{
+    width: 80px;
+    height: 35px;
+    margin-left: 3px;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.join-button:hover{
+    background-color: #FFC847;
+    border: 0;
+}
+
+.join_blank{
+    margin: 10px;
+}
+
+#join-purpose{
+    width: 500px;
+    height: 30px;
+    border: 1px solid #D9D9D9;
+}
+
+.argree{
+    padding-top:10px;
+    text-align: left;
+}
+
+
+.button-join{
+    margin-left: 5px;
+    width: 500px;
+    height: 40px;
+    cursor: pointer;
+    margin: 15px;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    border: 0;
+}
+
+.button-join:hover{
+    background-color: #FFC847;
+    border: 0;
+}
+
+.join-text1{
+    width: 418px;
+    height: 40px;
+    padding-top: 5px;
+    background-color: white;
+    border: 1px solid #D9D9D9;
+    cursor: pointer;
+}

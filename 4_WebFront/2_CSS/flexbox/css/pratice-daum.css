@@ -1,0 +1,67 @@
+div{
+    border: 1px solid black;
+    box-sizing: border-box;
+    
+}
+
+.daum{
+    height: 1000px;
+    display: flex;
+    flex-flow: column wrap;
+    width: 1000px;
+}
+
+.daum1{
+    height: 15%;
+    display: flex;
+
+}
+#logo{
+    padding-top:20px;
+    width: 100px;
+    height: 100px;
+    
+}
+
+.daum2{
+    height: 10%;
+    display: flex;
+    flex-basis;
+
+
+}
+
+.daum3{
+    height: 20%;
+    display: flex;
+
+}
+
+.daum4{
+    height: 10%;
+    display: flex;
+
+}
+
+.daum5{
+    height: 15%;
+    display: flex;
+
+}
+
+.daum6{
+    height: 15%;
+    display: flex;
+
+}
+
+.daum7{
+    height: 15%;
+    display: flex;
+
+}
+
+.news1{
+    width: 100%;
+    
+}

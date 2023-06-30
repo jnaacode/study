@@ -1,0 +1,16 @@
+$("div").on("click", function(){
+
+    //$(this).next().slideToggle();
+    
+
+    if($(this).next("p").css("display")=="none"){
+        $(this).siblings(".contents").slideUp();
+        $(this).next().slideDown();
+    }else{
+        $(this).next().slideUp();
+    }
+  
+    
+
+})
+
