@@ -24,6 +24,10 @@
 	
 	
 	 -->
+	session 범위 sessionVaule : ${sessionVaule }
+	
+	<br>
+	application 범위 appValue : ${appValue}
 
 	<h3>request에서 Parameter 얻어오기</h3>
 

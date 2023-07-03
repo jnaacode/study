@@ -3,11 +3,13 @@ package edu.kh.jsp.controller;
 import java.io.IOException;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 @WebServlet("/EL/scope")
 public class ScopeServlet extends HttpServlet {
@@ -35,6 +37,22 @@ public class ScopeServlet extends HttpServlet {
 		
 		// 2. request scope 
 		req.setAttribute("message", "request scope에 저장된 메세지 입니다.");
+		
+		// 3. session scope 
+		// 3-1) HttpSession 내장 객체 얻어오기 
+		HttpSession session = req.getSession();
+		
+		// 3-2) session 범위로 값 세팅(request와 방법 동일)
+		session.setAttribute("sessionVaule", "999");
+		session.setAttribute("message", "session scope에 저장된 메세지 입니다.");
+		
+		// 4. application scope 
+		// 4-1) ServeltContext 내장 객체 얻어오기 
+		ServletContext application = req.getServletContext();
+		
+		// 4-2) application 범위로 값 세팅(request와 방법 동일)
+		application.setAttribute( "appValue", "세미 프로젝트 파이팅!");
+		application.setAttribute("message", "application scope에 저장된 메세지 입니다.");
 		
 		//JSP로 요청 위임
 		String path ="/WEB-INF/views/el/scopeResult.jsp";
