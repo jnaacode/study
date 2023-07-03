@@ -1,9 +1,0 @@
-package edu.kh.jsp.controller;
-
-public class SignUpServlet {
-
-	public SignUpServlet() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

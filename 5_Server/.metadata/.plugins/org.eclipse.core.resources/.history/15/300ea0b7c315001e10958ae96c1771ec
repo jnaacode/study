@@ -1,9 +1,0 @@
-package edu.kh.servlet;
-
-public class ServletExStudy {
-
-	public ServletExStudy() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

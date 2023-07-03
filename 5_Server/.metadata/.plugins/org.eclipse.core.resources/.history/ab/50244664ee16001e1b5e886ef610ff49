@@ -1,9 +1,0 @@
-package edu.kh.jsp.controller;
-
-public class ELResultServlet {
-
-	public ELResultServlet() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

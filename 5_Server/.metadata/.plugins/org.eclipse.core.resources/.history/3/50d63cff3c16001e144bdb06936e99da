@@ -1,8 +1,0 @@
-package edu.kh.jsp.controller;
-
-import javax.servlet.http.HttpServlet;
-
-public class PizzaOrderServlet extends HttpServlet {
-
-
-}
