@@ -1,0 +1,9 @@
+package edu.kh.jsp.controller;
+
+public class ScopeServlet {
+
+	public ScopeServlet() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

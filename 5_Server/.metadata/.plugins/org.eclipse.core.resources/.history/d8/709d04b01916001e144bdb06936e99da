@@ -1,0 +1,32 @@
+package edu.kh.servlet;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class ServletEx3 extends HttpServlet {
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
+		String inputId = req.getParameter("inputId");
+		String inputPw1 = req.getParameter("inputPw1");
+		String inputPw2 = req.getParameter("inputPw2");
+		String inputName = req.getParameter("inputName");
+		String inputEmail = req.getParameter("inputEmail");
+		
+		String [] color = req.getParameterValues("color");
+		
+		if(color!=null) {
+			for(String c:color) {
+				System.out.println(c);
+			}
+		}
+		
+		
+	}
+
+}

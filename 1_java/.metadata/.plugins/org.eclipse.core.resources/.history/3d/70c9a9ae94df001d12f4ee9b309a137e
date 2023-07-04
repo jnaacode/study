@@ -1,0 +1,29 @@
+package edu.kh.variable.practice;
+
+import java.util.Scanner;
+
+public class LoopPracitce {
+	
+	public void pracitce1() {
+		
+		//1개의 합을 입력 받아 1부터 그 숫자까지 모두 출력하세요
+		//단, 입력한 수는 1보다 크거나 같아야한다. 
+		//만일, 1미만의 숫자가 입력됐다면 1이상의 숫자를 입력해주세요출력
+		
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("1이상의  숫자를 입력하세요 :");
+		int input = sc.nextInt();
+		
+		for(int i =1 ; i <= input; i++) {
+			
+			if(input < 1) {
+				System.out.print("1이상의 숫자를 입력해주세요");
+			}else {
+				System.out.println(i+ " ");
+			}
+			
+		}
+	}
+
+}

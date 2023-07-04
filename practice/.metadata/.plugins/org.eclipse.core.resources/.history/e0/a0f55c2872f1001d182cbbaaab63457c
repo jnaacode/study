@@ -1,0 +1,82 @@
+package edu.kh.basic.model.service;
+
+import java.util.Scanner;
+
+import edu.kh.basic.model.vo.Member;
+
+public class MemberService {
+	
+	private Scanner sc = new Scanner(System.in);
+	
+	private Member [] memberArr = new Member[5];
+	
+	private Member loginMember = null; // 현재 로그인한 회원 정보를 저장하는 변수 
+	
+	public void displayMenu() { 
+		
+		int menuNum = 0;
+		
+		do {
+			
+			  System.out.println("=======회원 정보 관리 프로그램 v2=======");
+		         System.out.println("1. 회원가입");
+		         System.out.println("2. 로그인");
+		         System.out.println("3. 회원 정보 조회");
+		         System.out.println("4. 회원 정보 수정");
+		         System.out.println("5. 회원 검색 (지역)");
+		         System.out.println("0. 프로그램종료");
+		         
+		         System.out.println("메뉴입력 >> ");
+		         menuNum = sc.nextInt(); //필드에 작성된 Scanner sc를 사용
+		         sc.nextLine();
+
+		         switch(menuNum) {
+		         
+		         case 1 : break;
+		         case 2 : ;break;
+		         case 3 : ;break;
+		         case 4 : ;break;
+		         case 5 : ;break;
+		             
+		         case 0 : System.out.println("프로그램을 종료합니다.");break;
+		            
+		         default : System.out.println("잘못 입력 하셨습니다. 다시 입력 해주세요!");
+		         
+		         }
+			
+		} while (menuNum !=0);
+	}
+		
+		public String signUp() {
+			
+			System.out.println("\n==========회원가입==========");
+			
+			int index = emptyIndex(); // 
+			 
+			System.out.println("현재회원 수 : "+index);
+			if(index ==-1) {
+				return "인원수 초과로 인해 회원가입이 불가능합니다.";
+			}
+			
+			System.out.println("아이디 : ");
+			int memberId = sc.nextInt();
+			
+			
+			System.out.print("비밀번호 : ");
+			int  = sc.nextInt();
+			
+			System.out.println("이름 : ");
+			int name = sc.nextInt();
+			
+			System.out.println("이름 : ");
+			int name = sc.nextInt();
+			
+			System.out.println("이름 : ");
+			int name = sc.nextInt();
+			
+			System.out.println("이름 : ");
+			int name = sc.nextInt();
+		
+	}
+
+}

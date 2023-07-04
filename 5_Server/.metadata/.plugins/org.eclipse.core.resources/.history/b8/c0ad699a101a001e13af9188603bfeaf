@@ -1,0 +1,6 @@
+package edu.kh.jsp.model.dao;
+
+public class MemberDAO {
+
+
+}

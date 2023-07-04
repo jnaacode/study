@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;edu.kh.oop.cls.model.service.ClaService&apos; to &apos;ClsService&apos;&#x0D;&#x0A;- Original project: &apos;06_oop&apos;&#x0D;&#x0A;- Original element: &apos;edu.kh.oop.cls.model.service.ClaService&apos;&#x0D;&#x0A;- Renamed element: &apos;edu.kh.oop.cls.model.service.ClsService&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ClaService&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;edu.kh.oop.cls.model.service{ClaService.java[ClaService" matchStrategy="1" name="ClsService" qualified="false" references="true" similarDeclarations="false" stamp="1682837304465" textual="false" version="1.0"/>
+</session>

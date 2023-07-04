@@ -1,0 +1,17 @@
+package edu.kh.servlet;
+
+import javax.servlet.http.HttpServlet;
+
+// Servlet 클래스를 만들기 위해서는 
+// javax.servlet.http.HttpServlet 추상 클래스를 
+// 반드시 상속 받아야 한다 (국룰)
+
+// -> doGet() dePost()를 필요한 형태로 오버라이딩 진행 
+
+public class ServletEx1 extends HttpServlet{
+
+	public ServletEx1() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

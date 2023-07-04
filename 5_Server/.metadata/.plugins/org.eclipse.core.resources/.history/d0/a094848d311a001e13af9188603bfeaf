@@ -1,0 +1,9 @@
+package edu.kh.community.member.controller;
+
+public class LoginServlet {
+
+	public LoginServlet() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

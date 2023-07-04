@@ -1,0 +1,13 @@
+package edu.kh.variable.practice;
+
+public class Run2 {
+
+	public static void main(String[] args) {
+
+		LoopPracitce lp = new LoopPracitce();
+		
+		LoopPracitce pracitce1();
+		
+	}
+
+}

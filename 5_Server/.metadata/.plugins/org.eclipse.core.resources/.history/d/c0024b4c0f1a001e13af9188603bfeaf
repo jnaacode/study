@@ -1,0 +1,14 @@
+package edu.kh.jsp.model.vo;
+
+public class Member {
+	
+	   // 필드
+	   private int memberNo;
+	   private String memberId;
+	   private String memberPw;
+	   private String memberName;
+	   private char memberGender;
+	   private Date enrollDate;
+	   private char secessionFlag;
+
+}

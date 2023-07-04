@@ -1,0 +1,21 @@
+package edu.kh.jsp.model.service;
+
+//JDBCTemplate 쓰려고 import 받아오기 
+import static edu.kh.jsp.common.JDBCTemplate.*;
+import java.util.List;
+
+import edu.kh.jsp.model.vo.Member;
+
+public class MemberService {
+
+
+	/** 회원 목록 조회 
+	 * @return memberList
+	 */
+	public List<Member> selectAll() throws Exception{
+		
+		
+		return null;
+	}
+
+}

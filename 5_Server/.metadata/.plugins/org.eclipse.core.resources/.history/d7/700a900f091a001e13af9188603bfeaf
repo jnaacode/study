@@ -1,0 +1,9 @@
+package edu.kh.jsp.common;
+
+public class JDBCTemplate {
+
+	public JDBCTemplate() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
