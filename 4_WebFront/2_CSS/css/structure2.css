@@ -185,6 +185,13 @@ nav a:hover {
     justify-content: center;
 }
 
+form [name="login-form"]>label{
+    
+   font-size: 14px;
+   margin-top: 5px;
+
+}
+
 #id-pw-area{
     margin: 0;
     padding: 0;
