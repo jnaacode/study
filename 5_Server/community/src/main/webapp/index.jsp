@@ -1,121 +1,163 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KH커뮤니티</title>
-    <link rel="stylesheet" href="resources/css/main-style.css">
-    <script src="https://kit.fontawesome.com/7bc7245179.js" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KH커뮤니티</title>
+<link rel="stylesheet" href="resources/css/main-style.css">
+<script src="https://kit.fontawesome.com/7bc7245179.js"
+	crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
-    <main>
-        <header>
-            <!-- 로고 : 클릭 시 메인페이지로 이동 -->
-            <section>
-                <a href="#">
-                    <img src="resources/images/khlogo.jpg" id="home-logo">
-                </a>
-            </section>
+	<main>
+		<header>
+			<!-- 로고 : 클릭 시 메인페이지로 이동 -->
+			<section>
+				<a href="#"> <img src="resources/images/khlogo.jpg"
+					id="home-logo">
+				</a>
+			</section>
 
-            <!-- header의 두번째 자식 div -->
-            <section>
-                <article class="search-area">
+			<!-- header의 두번째 자식 div -->
+			<section>
+				<article class="search-area">
 
-                    <!-- form내부 input 태그 값을 서버 또는 페이지로 전달 -->
-                    <form action="#" name="search-form">
+					<!-- form내부 input 태그 값을 서버 또는 페이지로 전달 -->
+					<form action="#" name="search-form">
 
-                        <!-- fielset : form 내부에서 input을 종료별로 묶는 용도로 많이 사용 -->
-                        <fieldset>
-                            <!-- query : 검색한값 -->
-                            <input type="search" id="query" name="query" placeholder="검색어를 입력 해주세요."
-                                autocapitalize="off">
+						<!-- fielset : form 내부에서 input을 종료별로 묶는 용도로 많이 사용 -->
+						<fieldset>
+							<!-- query : 검색한값 -->
+							<input type="search" id="query" name="query"
+								placeholder="검색어를 입력 해주세요." autocapitalize="off">
 
-                            <!-- 검색버튼 -->
-                            <button type="submit" id="serach-btn" i class="fa-solid fa-magnifying-glass"></button>
+							<!-- 검색버튼 -->
+							<button type="submit" id="serach-btn" i
+								class="fa-solid fa-magnifying-glass"></button>
 
-                        </fieldset>
+						</fieldset>
 
-                    </form>
-                </article>
-            </section>
+					</form>
+				</article>
+			</section>
 
-            <section></section>
-        </header>
-        <nav>
+			<section></section>
+		</header>
+		<nav>
 
-            <ul>
+			<ul>
 
-                <li><a href="#">공지사항</a></li>
-                <li><a href="#">자유 게시판</a></li>
-                <li><a href="#">질문 게시판</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">1:1 문의</a></li>
+				<li><a href="#">공지사항</a></li>
+				<li><a href="#">자유 게시판</a></li>
+				<li><a href="#">질문 게시판</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">1:1 문의</a></li>
 
-            </ul>
+			</ul>
 
-        </nav>
+		</nav>
 
-        <section class="content">
-            <section class="content-1"></section>
-            <section class="content-2">
-            	<!-- 절대경로 : /community/member/login -->
-            	
-                <!-- 서버로 보낼거니 form 사용 -->
-                <!-- 상대경로(index.jsp)기준 -->
-                <form action="member/login" method="post" name="login-form">
+		<section class="content">
+			<section class="content-1">
+				loginMember : ${sessionScope.loginMember }
 
-                    <!-- 아이디(이메일)/비밀번호/로그인버튼 영역 -->
-                    <fieldset id="id-pw-area">
-                        <section>
-                            <input type="text" name="inputEmail" placeholder="아이디(이메일)">
-                            <input type="password" name="inputPw" placeholder="비밀번호">
-                        </section>
-                        
-                        <section>
-                            <button>로그인</button>
-                        </section>
+				<hr>
 
-                    </fieldset>
+				message : ${sessionScope. message}
+			</section>
+			<section class="content-2">
 
-                    <!-- 회원가입/ID/PW 찾기 영역 -->
-                    <article id="signup-find-area">
-                        <a href="">회원가입</a>
-                        <span>|</span>
-                        <a href="">ID/PW 찾기</a>
-                    </article>
+				<!-- if - else -->
+				<c:choose>
 
-                    <label for="">
-                        <input type="checkbox">아이디 저장
-                    </label>
+					<%-- choose내부에는 jsp 주석만 사용 --%>
+					<c:when test="${ empty sessionScope.loginMember }">
+					
+						<!-- 절대경로 : /community/member/login -->
+						<!-- 상대경로(index.jsp)기준 -->
+						<!-- 서버로 보낼거니 form 사용 -->
+						<form action="member/login" method="post" name="login-form">
+
+							<!-- 아이디(이메일)/비밀번호/로그인버튼 영역 -->
+							<fieldset id="id-pw-area">
+								<section>
+									<input type="text" name="inputEmail" placeholder="아이디(이메일)">
+									<input type="password" name="inputPw" placeholder="비밀번호">
+								</section>
+
+								<section>
+									<button>로그인</button>
+								</section>
+
+							</fieldset>
+
+							<!-- 회원가입/ID/PW 찾기 영역 -->
+							<article id="signup-find-area">
+								<a href="">회원가입</a> <span>|</span> <a href="">ID/PW 찾기</a>
+							</article>
+
+							<label for=""> <input type="checkbox">아이디 저장
+							</label>
 
 
-                </form>
-            </section>
-        </section>
-    </main>
+						</form>
 
-    <footer>
-        <p>Copyright &copy;KH Information Educational Institue M-Class</p>
+					</c:when>
 
-        <article>
-            <a href="">프로젝트 소개</a>
-            <span> | </span>
 
-            <a href="">이용약관</a>
-            <span> | </span>
+					<%-- 로그인이 되어있을 경우 --%>
+					<c:otherwise>
+						<article class="login-area">
+						
+						
+						<!-- 회원 프로필 이미지 -->
+						<a href="#">
+							<img src="/community/resources/images/user.png" id="member-profile">
+						</a>
+						
+						<!-- 회원정보 + 로그아웃 버튼 -->
+						
+						<div class="my-info">
+						
+							<div>
+								<a href="#" id="nickname">${loginMember.memberNickname}</a>
+								<a href="#" id="logout-btn">로그아웃</a>
+							</div>
+							
+							<p>
+								${sessionScope.loginMember.memberEmail}
+							</p>
+							
+							
+						</div>
+						
+						</article>
+					</c:otherwise>
 
-            <a href="">개인정보처리방침</a>
-            <span> | </span>
+				</c:choose>
 
-            <a href="">고객센터</a>
-        </article>
 
-    </footer>
+
+			</section>
+		</section>
+	</main>
+
+	<footer>
+		<p>Copyright &copy;KH Information Educational Institue M-Class</p>
+
+		<article>
+			<a href="">프로젝트 소개</a> <span> | </span> <a href="">이용약관</a> <span>
+				| </span> <a href="">개인정보처리방침</a> <span> | </span> <a href="">고객센터</a>
+		</article>
+
+	</footer>
 
 </body>
 

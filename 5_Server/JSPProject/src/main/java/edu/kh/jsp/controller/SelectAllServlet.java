@@ -26,7 +26,7 @@ public class SelectAllServlet extends HttpServlet {
 			
 			MemberService service = new MemberService();
 			
-			//회원 목록 조회 service 호출 후 결과 반환 (db접근)
+			//회원 목록 조회 service 호출 후 결과 반환 (db접근)                    
 			List<Member>memberList = service.selectAll();
 			
 			//응답 화면을 만들 JSP로 요청 위임하기 --> vs코드 jsp 만들기!  

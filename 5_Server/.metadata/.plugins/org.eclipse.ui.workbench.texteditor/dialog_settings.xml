@@ -6,14 +6,14 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="mem"/>
+			<item value="loginMember"/>
+			<item value="ds"/>
+			<item value="Properties"/>
+			<item value="List&lt;Member&gt; memberList = new ArrayList&lt;Member&gt;();"/>
 			<item value="secessionFlag"/>
 			<item value="null 처리 방법"/>
 			<item value="result"/>
-			<item value="HttpServletRequest "/>
-			<item value="RequestDispatcher"/>
-			<item value="request 범위 messge : page"/>
-			<item value="pageScope"/>
-			<item value="menu"/>
 		</list>
 		<list key="replacehistory">
 		</list>

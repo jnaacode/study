@@ -1,0 +1,9 @@
+package edu.kh.community.sql;
+
+public class CreateXML {
+
+	public CreateXML() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

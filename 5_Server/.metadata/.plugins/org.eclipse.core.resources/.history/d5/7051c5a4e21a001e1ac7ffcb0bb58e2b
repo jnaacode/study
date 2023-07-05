@@ -1,0 +1,14 @@
+package edu.kh.community.member.model.dao;
+
+import java.sql.Connection;
+
+import edu.kh.community.member.model.vo.Member;
+
+public class MemberDAO {
+
+	public Member login(Connection conn, Member mem) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

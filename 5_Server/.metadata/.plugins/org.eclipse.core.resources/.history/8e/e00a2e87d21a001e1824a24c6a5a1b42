@@ -1,0 +1,49 @@
+package edu.kh.community.common.filter;
+
+import java.io.IOException;
+import javax.servlet.Filter;
+import javax.servlet.FilterChain;
+import javax.servlet.FilterConfig;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import javax.servlet.annotation.WebFilter;
+import javax.servlet.http.HttpFilter;
+
+/** 필터(filter)
+ * - 클라이언트 요청 시 생성되는 
+ *   HttpServletRequest, HttpServletResponse가 
+ *   요청을 처리하는 Servlet에 도달하기 전에 
+ *   특정 코드를 수행하는 클래스 
+ *   
+ *   [요청흐름]
+ *   클라이언트 -> 요청 -> HttpServletRequest  -> 필터 -> 요청처리 Servlet
+ *   			      HttpServletResponse
+ *   			      생성 
+ *   
+ * - 여러 필터를 만들어 연쇄적으로 연결하여 수행할 수 있다.(FilterChain)
+ * 
+ */
+
+// @WebFilter("url패턴")
+// - 해당 클래스를 필터 클래스로 등록 
+// - url 패턴에 일치하는 요청이 있을 경우 해당 요청을 필터링함 
+
+// filterName 속성 : 필터의 이름 지정, 필터 순서 지정 시 사용 
+// urlPatterns 속성 : 요청 주소 패턴 
+@WebFilter(filterName ="encodingFilter", urlPatterns="/*")
+public class EncodingFilter extends HttpFilter implements Filter {
+ 
+	public void init(FilterConfig fConfig) throws ServletException {
+	}
+	
+	public void destroy() {
+	}
+
+	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+
+		chain.doFilter(request, response);
+	}
+
+
+}
